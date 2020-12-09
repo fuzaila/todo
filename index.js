@@ -19,10 +19,10 @@ $(document).ready(function()
                     {
                         if(JSON.stringify(response[i].completed) == "true")
                         {
-                            marked = "<input type='checkbox' checked class='check' name='state' value='done'>";
+                            marked = "<input type='checkbox' checked class='check' disabled>";
                         }
                         else{
-                            marked = "<input type='checkbox' class='check' name='state' value='notdone'>";
+                            marked = "<input type='checkbox' class='check'>";
                         }
                         output += "<td>" + response[i].userId + "</td><td>" + response[i].id + "</td><td>" + response[i].title + "</td><td>" + marked + "</td></tr><tr>";
                     }
